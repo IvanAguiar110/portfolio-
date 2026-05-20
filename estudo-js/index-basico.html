@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+  <title>Meu Site</title>
+
+  <style>
+
+  html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: linear-gradient(to right, #141e30, #243b55);
+
+      display: flex;
+      flex-direction: column;
+        align-items: center;
+
+        font-family: Arial, sans-serif;
+
+        scroll-behavior: smooth;
+    }
+
+    .navbar {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    padding: 20px;
+
+    background: rgba(255,255,255,0.08);
+
+backdrop-filter: blur(10px);
+
+box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+
+position: sticky;
+
+top: 0;
+
+z-index: 1000;
+}
+
+.navbar a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+    transition: 0.3s;
+
+    display: inline-block;
+
+    transform-origin: center;
+    will-change: transform;
+    backface-visibility: hidden;
+}
+
+.navbar a:hover {
+    color: #00d4ff;
+
+    transform: scale(1.08);
+}
+
+    .container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+
+  padding: 20px;
+  border-radius: 15px;
+  margin: 20px;
+  width: 320px;
+
+  text-align: center;
+
+  color: white;
+
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+
+  transition: 0.4s;
+}
+
+.perfil {
+    width: 120px;
+    height: 120px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 3px solid #00d4ff;
+
+    margin-bottom: 15px;
+}
+
+
+    .container:hover {
+    transform: translateY(-10px);
+
+    background: rgba(255, 255, 255, 0.15);
+
+    box-shadow: 0px 8px 25px rgba(0,0,0,0.5);
+}
+
+.container.destaque {
+    transform: translateY(-10px) scale(1.05);
+    background: rgba(255, 255, 255, 0.18);
+    box-shadow: 0px 8px 30px rgba(0,0,0,0.6);
+    border: 1px solid #00d4ff;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #00d4ff;
+}
+
+p {
+    color: #dcdcdc;
+    line-height: 1.5;
+}
+
+    button {
+      cursor: pointer;
+        padding: 10px 20px;
+        background: blue;
+        color: white;
+        border-radius: 8px;
+        transition: 0.5s;
+    }
+
+    button:hover {
+        transform: scale(1.2);
+        background: green;
+        box-shadow: 2px 2px 8px gray;
+    }
+
+  
+
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar">
+
+    <a href="#Sobre" onclick="destacarSecao('Sobre')">Sobre</a>
+
+    <a href="#Contato-Section" onclick="destacarSecao('Contato-Section')">Contato</a>
+
+    <a href="#Habilidades" onclick="destacarSecao('Habilidades')">Habilidades</a>
+
+    <a href="#Projetos" onclick="destacarSecao('Projetos')">Projetos</a>
+
+    <a href="#Redes" onclick="destacarSecao('Redes')">Redes</a>
+
+</nav>
+
+
+    <div class="container" id="Sobre">
+
+      <img src="https://i.pravatar.cc/150?img=12" class="perfil">
+
+      <h1>Ivan</h1>
+      <p>Idade: 20 anos</p>
+      <p>Voltando aos estudos de HTML e CSS</p>
+    </div>
+
+    <div class="container" id="Contato-Section"> 
+        <h2>Meu Número: (21) 97366-8899</h2>
+        <p>Este é o meu número de telefone principal.</p>
+
+        <button id="contato" onclick="mostrarMensagem()">Entrar em contato</button>
+    </div>
+
+    <script src="script.js"></script>
+
+<div class="container" id="Habilidades">
+        <h2>Minhas habilidades</h2>
+        <p>Tenho habilidades em JavaScript, HTML e CSS.</p>
+    </div>
+
+    <div class="container" id="Projetos">
+
+    <h2>Meus Projetos</h2>
+
+    <p>🔹 Portfólio pessoal em HTML, CSS e JavaScript</p>
+
+    <p>🔹 Sistema interativo com botões dinâmicos</p>
+
+    <p>🔹 Projeto em evolução para meu GitHub</p>
+
+</div>
+
+
+<div class="container" id="Redes">
+
+    <h2>Minhas Redes</h2>
+
+    <p>💻 GitHub: github.com/seuperfil</p>
+
+    <p>🔗 LinkedIn: linkedin.com/in/seuperfil</p>
+
+    <p>📧 Email: ivan@email.com</p>
+
+</div>
+        
+
+    <div class="container">
+        <h2>Meu Linkedin</h2>
+        <p>Este é o meu Linkedin: linkedin.com/in/ivan</p>
+    </div>
+
+</body>
+
+</html>
+        
