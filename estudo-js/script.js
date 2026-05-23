@@ -1,16 +1,19 @@
 let enviado = false;
 
-function mostrarMensagem() 
-{
+let botao = document.getElementById("contato");
+
+botao.addEventListener("click", mostrarMensagem);
+
+function mostrarMensagem() {
     if (enviado === false) {
-        document.getElementById("contato").innerText = "Mensagem enviada!";
+        botao.innerText = "Mensagem enviada!";
         enviado = true;
     } else {
-        document.getElementById("contato").innerText = "Entrar em contato";
+        botao.innerText = "Entrar em contato";
         enviado = false;
     }
 }
-    
+
 function destacarSecao(id) {
     let secao = document.getElementById(id);
 
@@ -18,5 +21,5 @@ function destacarSecao(id) {
 
     setTimeout(function() {
         secao.classList.remove("destaque");
-    }, 1000);
+    }, 650);
 }

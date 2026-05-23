@@ -72,19 +72,15 @@ z-index: 1000;
     .container {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
-
   padding: 20px;
   border-radius: 15px;
   margin: 20px;
   width: 320px;
-
   text-align: center;
-
   color: white;
-
   box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
-
   transition: 0.4s;
+  border: 1px solid transparent;
 }
 
 .perfil {
@@ -110,10 +106,10 @@ z-index: 1000;
 }
 
 .container.destaque {
-    transform: translateY(-10px) scale(1.05);
-    background: rgba(255, 255, 255, 0.18);
-    box-shadow: 0px 8px 30px rgba(0,0,0,0.6);
-    border: 1px solid #00d4ff;
+  transform: translateY(-10px) scale(1.05);
+  background: rgba(255, 255, 255, 0.18);
+  box-shadow: 0px 8px 30px rgba(0,0,0,0.6);
+  border: 1px solid #00d4ff;
 }
 
 h1 {
@@ -180,12 +176,10 @@ p {
         <h2>Meu Número: (21) 97366-8899</h2>
         <p>Este é o meu número de telefone principal.</p>
 
-        <button id="contato" onclick="mostrarMensagem()">Entrar em contato</button>
+        <button id="contato">Entrar em contato</button>
     </div>
 
-    <script src="script.js"></script>
-
-<div class="container" id="Habilidades">
+    <div class="container" id="Habilidades">
         <h2>Minhas habilidades</h2>
         <p>Tenho habilidades em JavaScript, HTML e CSS.</p>
     </div>
@@ -220,6 +214,8 @@ p {
         <h2>Meu Linkedin</h2>
         <p>Este é o meu Linkedin: linkedin.com/in/ivan</p>
     </div>
+
+<script src="script.js"></script>
 
 </body>
 
